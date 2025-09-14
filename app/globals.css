@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --component-bg: #ededed;
+  --button-bg: #0a0a0a;
+  --text-color: #ffffff;
+}
+
+/* FontAwesome CSS Classes */
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2") format("woff2"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff") format("woff"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.ttf") format("truetype");
+}
+
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.fa-bolt:before {
+  content: "\f0e7";
+}
+
+.fa-lock:before {
+  content: "\f023";
+}
+
+.fa-cogs:before {
+  content: "\f085";
+}
+
+.fa-plus:before {
+  content: "\f067";
+}
+
+.fa-list:before {
+  content: "\f03a";
+}
+
+.fa-cog:before {
+  content: "\f013";
+}
+
+.fa-folder:before {
+  content: "\f07b";
+}
+
+.fa-times:before {
+  content: "\f00d";
+}
+
+.fa-check-circle:before {
+  content: "\f058";
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-component-bg: var(--component-bg);
+  --color-button-bg: var(--button-bg);
+  --color-text: var(--text-color);
+  --font-sans: var(--font-poppins);
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+}
